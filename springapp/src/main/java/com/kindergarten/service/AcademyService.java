@@ -1,0 +1,23 @@
+package com.kindergarten.service;
+
+import java.util.List;
+
+import com.kindergarten.model.Academy;
+
+public interface AcademyService {
+
+	public Academy addAcademy(Academy academy);
+
+	public Academy findByAcademyName(String academyName);
+
+	public Academy findByAcademyId(int academyId);
+
+	public List<Academy> viewAcademy();
+
+	public String deleteAcademy(int id);
+
+	public Academy editAcademy(int academyId, Academy academy);
+
+	public Boolean existsByAcademyName(String academyName);
+
+}
